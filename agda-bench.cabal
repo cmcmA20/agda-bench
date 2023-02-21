@@ -23,7 +23,7 @@ source-repository head
 
 executable agda-bench
   main-is:             Main.hs
-  build-depends:       base                 >= 4.10    && < 4.16
+  build-depends:       base                 >= 4.10    && < 4.17
                      , Agda                 >= 2.5.4   && < 2.7
                      , criterion            >= 1.4
                      -- same as Agda 2.6.2

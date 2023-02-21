@@ -1,0 +1,6 @@
+packages: .
+
+source-repository-package
+    type: git
+    location: https://github.com/agda/agda.git
+    tag: 8d4416a462719bffbf21617b9f2fa00234e185ac

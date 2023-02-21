@@ -113,7 +113,7 @@ normaliser opts | fullNormalForm opts = strat . normalise
 
 runBenchmarks :: Options -> TCM ()
 runBenchmarks opts@Options{ singleRun = Just s } = printExpr opts 0 s
-runBenchmarks opts@Options{ typeCheckBench = bs @ (_ : _) } =
+runBenchmarks opts@Options{ typeCheckBench = bs@(_ : _) } =
   runTypeCheckBenchmarks opts bs
 runBenchmarks opts = do
   benchmarks <- (++ customBench opts) <$> findBenchmarks
